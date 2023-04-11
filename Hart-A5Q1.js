@@ -2,7 +2,7 @@ let bubbles = [];
 // array for bubbles
 function setup() {
   createCanvas(960, 540);
-  // creates the 5 bubbles with variables for array
+   // creates the 5 bubbles with variables for array
   for (let i = 0; i < 5; i++) {
     let x = random(width);
     let y = random(height);
@@ -14,40 +14,33 @@ function setup() {
 
 function draw() {
   background(220);
-  // displays objects in array
+   // displays objects in array
   for (let i = 0; i < bubbles.length; i++) {
-    bubbles[i].move();
+    bubbles[i].jitter();
     bubbles[i].show();
   }
 }
 
 class Bubble {
-  // constructor for each bubble variable
   constructor(x, y, r) {
+    // constructor for each bubble variable
     this.x = x;
     this.y = y;
     this.r = r;
-    // random speed for x and y of bubble
-    this.xspeed = random(-2, 2);
-    this.yspeed = random(-2, 2);
   }
   
-  move() {
-    this.x += this.xspeed;
-    this.y += this.yspeed;
-    // if statements to reverse speed when corner hit
-    if (this.x > width - this.r || this.x < this.r) {
-      this.xspeed = -this.xspeed;
-    }
-    if (this.y > height - this.r || this.y < this.r) {
-      this.yspeed = -this.yspeed;
-    }
+  jitter() {
+    // jitter function to randomize movement within 5 x and y coords
+    let xOffset = random(-5, 5);
+    let yOffset = random(-5, 5);
+    this.x += xOffset;
+    this.y += yOffset;
   }
   
   show() {
     push();
     translate(this.x, this.y);
-    // color for shape and stroke
+    //color for shape and stroke
     fill(0, 50, 200);
     stroke(0, 50, 150);
     strokeWeight(2);
