@@ -7,4 +7,6 @@ in a quantity of 50.
 A5Q3 https://editor.p5js.org/john.hart/sketches/R_iZNKvpS Desc: Reutilizing the bubbles from the past sketches, this is a revamped aquarium simulation 
 using 2 new arrays for breeders and catchers represented by pirahnas and salmon, the pihranas disappearing after being eaten by the salmon (originally
 had it other way around)
-A5Q4
+A5Q4 https://editor.p5js.org/john.hart/sketches/lztZf4kW- Desc: New iteration of the simulation with the breeders having improved nonlinear movement
+in the canvas, detecting collision with the wall and bouncing off of it. attempted to add capabiity for breeders to multiply upon collision but
+did not work.
