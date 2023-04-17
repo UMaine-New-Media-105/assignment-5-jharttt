@@ -4,3 +4,7 @@ their own sizes and locations on the canvas, and the jitter function causes thei
 the jitter part was not in my initial sketch
 A5Q2 https://editor.p5js.org/john.hart/sketches/uev-dpfsG Desc: Editing the code from sketch one, this creates bubbles in the same style but
 in a quantity of 50.
+A5Q3 https://editor.p5js.org/john.hart/sketches/R_iZNKvpS Desc: Reutilizing the bubbles from the past sketches, this is a revamped aquarium simulation 
+using 2 new arrays for breeders and catchers represented by pirahnas and salmon, the pihranas disappearing after being eaten by the salmon (originally
+had it other way around)
+A5Q4
